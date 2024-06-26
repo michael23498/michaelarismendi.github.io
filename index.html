@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Michael Arismendi | Jr. Developer</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css" integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW4CSu87JA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/recurso.png">
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left"  id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"
+              ><div class="button">
+                <i class="fa-solid fa-arrow-up-right-from-square" ></i>&nbsp VISITAR SITIO
+              </div></a
+            >
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div>
+
+      <section id="home" class="flex height-fix">
+        <div id="pt" class="canvas"></div>
+        <div class="flex">
+          <div class="text">
+            Hola 👋🏼, mi nombre es <span class="highlight">Michael Arismendi</span>.
+            <br />
+            Soy Junior Front-End - Backend developer.
+          </div>
+
+          <div class="button page-link" dest="about">
+            Ver mi trabajo <i style="margin-bottom: 1rem;" class="mdi mdi-arrow-right"></i>
+          </div>
+
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">Inicio</div>
+              <div class="page-link" dest="about">Acerca de</div>
+              <div class="page-link" dest="portfolio">portafolio</div>
+              <div class="page-link" dest="blog">blog</div>
+              <div class="page-link" dest="contact">Contacto</div>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            SOBRE MÍ
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"></div>
+
+          <div class="flex row label-wrap">
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap ">
+                <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                  <div class="hexagon">
+                    <i style="margin-top: 1rem;" class="mdi mdi-speedometer"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in">
+                  <div class="label bold">Rápido</div>
+                  <div>
+                    Tiempos de carga rápidos e interacción sin demoras, es lo primordial.
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex bullet-wrap ">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".2s"
+                >
+                  <div class="hexagon">
+                    <i style="margin-top: 1rem;" class="mdi mdi-cellphone-link"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                  <div class="label bold">Receptivo</div>
+                  <div>Mis diseños funcionarán en cualquier dispositivo, sin importar el tamaño.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap ">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".4s"
+                >
+                  <div class="hexagon">
+                    <i style="margin-top: 1rem;" class="mdi mdi-lightbulb-outline"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                  <div class="label bold">Intuitivo</div>
+                  <div>Un buen y atractivo diseño web lo ayuda a mantener sus clientes potenciales en su sitio.</div>
+                </div> 
+              </div>
+
+              <div class="flex bullet-wrap ">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".6s"
+                >
+                  <div class="hexagon">
+                    <i  style="margin-top: 1rem;" class="mdi mdi-rocket"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                  <div class="label bold">Dinámico</div>
+                  <div>
+                    Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-wrapper flex row-gt-sm">
+            <div
+              class="flex flex-50-gt-sm waypoint"
+              data-animation="slide-in-left"
+            >
+              <img src="images/imgme.png" class="me" />
+              <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+              <div class="label bold">Me presento</div>
+              <div style="margin-bottom: 0.1rem;">
+                Soy desarrollador Jr. Front-End - Backend
+                <br>
+                Tengo una gran pasión por los efectos de interfaz de usuario, las animaciones y la creación de 
+                experiencias de usuario intuitivas y dinámicas.
+                <br>
+                <span class="page-link highlight" dest="contact">Creemos algo juntos.</span>
+              </div>
+              <a
+              class="button--cta"
+              href="Curriculum_Michael_ Arismendi.pdf"
+              download="Michael Arismendi CV"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-file-download"></i>Descargar CV
+            </a>
+            </div>
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right">
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width:88%">
+                  <div class="tag bold flex">HTML</div>
+                </div>
+                <span>100%</span>
+              </div>
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">MySQL</div>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="bar flex">
+                <div class="bar fill" style="width:70%">
+                  <div class="tag bold flex">PHP</div>
+                </div>
+                <span>70%</span>
+              </div>
+  
+                <div class="bar flex">
+                  <div class="bar fill" style="width:70%">
+                    <div class="tag bold flex">CSS</div>
+                  </div>
+                  <span>70%</span>
+                </div>
+              
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">Angular</div>
+                </div>
+                <span>65%</span>
+              </div>
+  
+                <div class="bar flex">
+                  <div class="bar fill" style="width:60%">
+                    <div class="tag bold flex">JavaScript</div>
+                  </div>
+                  <span>60%</span>
+                </div>
+                <div class="bar flex">
+                  <div class="bar fill" style="width:60%">
+                    <div class="tag bold flex">UI Design</div>
+                  </div>
+                  <span>60%</span>
+                </div>
+                <div class="bar flex">
+                  <div class="bar fill" style="width:40%">
+                   <div class="tag bold flex">Python</div>
+                   </div>
+                   <span>40%</span>
+                  </div>
+                  <div class="bar flex">
+                    <div class="bar fill" style="width:40%">
+                      <div class="tag bold flex">Node.js</div>
+                    </div>
+                    <span>40%</span>
+                  </div>
+                  <div class="bar flex">
+                    <div class="bar fill" style="width:40%">
+                      <div class="tag bold flex">React</div>
+                    </div>
+                    <span>40%</span>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+        <div class="header waypoint" data-animation="slide-in-right">
+          Proyectos
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" data-filter="all">TODO</div>
+            <!-- <div class="filter" data-filter=".rails">RUBY/RAILS</div> -->
+            <div class="filter" data-filter=".react">REACT</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+          <div class="float-bar">
+            <div class="flex row">
+              <div class="filter" data-filter="all">TODO</div>
+              <!-- <div class="filter" data-filter=".rails">RUBY/RAILS</div> -->
+              <div class="filter" data-filter=".react">REACT-JS</div>
+              <div class="filter" data-filter=".js">JAVASCRIPT</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Calculadora Online</div>
+                <span class="highlight">JavaScript / HTML / CSS</span>
+              </div>
+              <div class="button" id="ordering">Leer más</div>
+            </div>
+          </div>
+
+          <div  id="gallery" class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Aplicación de Tareas</div>
+                <span class="highlight">JavaScript / HTML / CSS</span>
+              </div>
+              <div class="button" id="discover">Leer más</div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Snake Game</div>
+                <span class="highlight">JavaScript / HTML / CSS</span>
+              </div>
+                <div class="button" id="newrelic">Leer más</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Walker Tracker</div>
+                <span class="highlight">JavaScript</span>
+              </div>
+              <div class="button" id="walker">Leer Más</div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">MY STAND</div>
+                <span class="highlight">JavaScript / Node.js</span>
+              </div>
+              <div class="button" id="mystand">Leer Más</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG -->
+      <section id="blog">
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">BLOG</div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+
+          <div class="flex row wrap">
+            <div class="flex row-gt-sm">
+              <a
+                href="https://jonmircha.com/"
+                target="_blank"
+              >
+                <div class="blog-wrap waypoint" data-animation="fade-in">
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-1"></div>
+                    <div class="label bold">Hola, soy tu amigo y docente digital Jonathan MirCha</div>
+                    <div class="date">FEBRERO, 2022</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      Si te interesa el maravilloso mundo de la programación web me puedes seguir en mi canal de YouTube, 
+                      mi blog técnico y mis cuentas de GitHub, Twitter, Instagram y Discord.
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://ed.team/"
+                target="_blank"
+              >
+                <div
+                  class="blog-wrap waypoint"
+                  data-animation="fade-in"
+                  data-delay=".2s"
+                >
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-2"></div>
+                    <div class="label bold">
+                      Una amplia selección de cursos
+                    </div>
+                    <div class="date">ABRIL 29, 2022</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      Miles de personas de todas las edades, países y condición económica consiguieron su primer empleo, mejoraron sus ingresos o 
+                      crearon su propio negocio estudiando en EDteam. ¡Ahora te toca a ti!
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="flex row-gt-sm">
+              <a
+                href="https://www.instagram.com/midu.dev/"
+                target="_blank"
+              >
+                <div
+                  class="blog-wrap waypoint"
+                  data-animation="fade-in"
+                  data-delay=".4s"
+                >
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-3"></div>
+                    <div class="label bold">midu.dev</div>
+                    <div class="date">ENERO 11, 2020</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      Excelente desarrollador, me capacito diariamente con el contenido que pública y a través de las metodologías que usa,
+                      actualmente trabaja en Microsoft y enseña muy bien...
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://code.visualstudio.com/"
+                target="_blank"
+              >
+                <div
+                  class="blog-wrap waypoint"
+                  data-animation="fade-in"
+                  data-delay=".6s"
+                >
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-4"></div>
+                    <div class="label bold">
+                      Visual Studio Code
+                    </div>
+                    <div class="date">MAYO 23, 2021</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      No pierda el ritmo y complete las tareas más rápido con la ayuda de las sugerencias de varias líneas que aparecen a raíz del código y los comentarios del código.
+                      Crear nuevas funcionalidades, escribir pruebas unitarias y aprender nuevas tecnologías nunca ha sido tan fácil y divertido.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">¡Contáctame!</div>
+          <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+          <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">¿Tienes alguna pregunta o deseas que trabajemos juntos?</div>
+          <br>
+          <br>
+          <div style="font-size: 26px;" class="highlight waypoint" data-animation="slide-in-left" data-delay=".5s">📨 michaelarismendi2@gmail.com</div>
+          <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form" method="POST">
+            <input placeholder="Ingresa tu nombre..." type="text" name="nombre" required />
+            <input type="hidden" name="access_key" value="85b46fa1-17f7-4ef2-a12f-ac0dc0dfdce8"/>
+            <input placeholder="Ingresa tu correo..." type="email" name="correo" required />
+            <textarea placeholder="Ingresa tu mensaje..." type="text" name="mensaje"></textarea>
+            <input class="button" type="submit" id="submit" value="Enviar"/>
+            <div id="success">
+              <div>¡Mensaje enviado con éxito!. ¡Gracias!<span id="close" class="mdi mdi-close"></span></div>
+            </div>
+            <div id="result" className="error"></div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/michael-arismendi-689a42234/">
+            <div class="flex icon" id="icon-2">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/MichaelArismendi12/">
+            <div class="flex icon" id="icon-3">
+              <i class="fa-brands fa-facebook-square"></i>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/michael_arismendi/">
+            <div class="flex icon" id="icon-4">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </a>
+          <a href="https://github.com/michael23499">
+            <div class="flex icon" id="icon-5">
+           <i class="fa-brands fa-github"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            MICHAEL ARISMENDI <span class="highlight">&copy;2024</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="preload">
+      <img src="/images/me.jpg"/>
+      <!-- <img src="img/filler.jpg" /> -->
+      <img src="img/thumb-1.jpg" />
+      <img src="img/thumb-2.jpg" />
+      <img src="img/thumb-3.jpg" />
+      <img src="img/thumb-5.jpg" />
+      <img src="img/thumb-6.jpg" />
+      <img src="img/blog-1.jpg" />
+      <img src="img/blog-2.jpg" />
+      <img src="img/blog-3.jpg" />
+      <img src="img/blog-4.jpg" />
+      <img src="img/slides/discover-0.jpg" />
+      <img src="img/slides/discover-1.jpg" />
+      <img src="img/slides/discover-2.jpg" />
+      <img src="img/slides/ordering-0.jpg" />
+      <img src="img/slides/ordering-1.jpg" />
+      <img src="img/slides/ordering-2.jpg" />
+      <img src="img/slides/newrelic-0.jpg" />
+      <img src="img/slides/newrelic-1.jpg" />
+      <img src="img/slides/newrelic-2.jpg" />
+      <img src="img/slides/walker-0.jpg" />
+      <img src="img/slides/walker-1.jpg" />
+      <img src="img/slides/walker-2.jpg" />
+    </div>
+  </body>
+</html>
+
+<script src="scripts/canvas.js"></script>
